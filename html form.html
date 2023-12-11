@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .main-cnt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        table{
+            line-height: 10vh;
+        }
+        td, h2{
+            color: #fff;
+            font-size: larger;
+        }
+        h2{
+            font-size: xx-large;
+        }
+        input{
+            padding-left: 1vw;
+            font-size: medium;
+            height: 30px; width: 100%;
+        }
+        button{
+            font-size: larger;
+            padding: 0.5vh 2vw;
+        }
+        .main-code{
+            height: 80vh; width: 40vw;
+            background-color: snow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-code pre{
+            font-size: larger;
+            margin-right: 35%; overflow-x: hidden;
+        }
+        @media screen and (max-width: 500px){
+            .main-cnt{
+                display: flex;
+                flex-direction: column;
+            }
+            .main-code{
+                width: 100vw; height: 42vh;
+            }
+            .main-code pre{
+                font-size: xx-small;
+            }
+            h2{
+                font-size: small;
+            }
+            button{
+                font-size: small;
+            }
+            td,h2{
+                font-size: x-small;
+            }
+            input{
+            padding-left: 1vw;
+            font-size: smaller;
+            height: 20px; width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo"><a href="index.html">Siddhesh | Code</a></div>
+    </nav>
+    <main>
+        <div class="main-cnt">
+            <div class="main-code">
+                <pre>
+                    HTML <br>
+                    &lt;h2&gt;User Form&lt;/h2&gt; <br>
+                    Name :-
+                    &lt;input type="text" id="name"&gt;
+                    Email ID :-
+                    &lt;input type="email" id="email"&gt;
+                    Password :-
+                    &lt;input type="password" id="password"&gt; <br>
+                    &lt;button type="reset"&gt;Clear&lt;/button&gt;
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt; 
+                </pre>
+            </div>
+            <form>
+                <table>
+                    <tr>
+                        <td><h2>User Form</h2></td>
+                    </tr>
+                    <tr>
+                        <td>Name :-</td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email ID :-</td>
+                        <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password :-</td>
+                        <td><input type="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="reset">Clear</button></td>
+                        <td><button type="submit" onclick="frm()">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+    <script>
+        function frm(){
+            var a = document.getElementById("name").value;
+            alert(a + "Your Form Sumbitted");
+        }
+    </script>
+</body>
+</html>

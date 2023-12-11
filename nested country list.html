@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Capital List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .main-cnt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        table{
+            line-height: 10vh;
+        }
+        td, h2{
+            color: #fff;
+            font-size: larger;
+        }
+        h2{
+            font-size: xx-large;
+        }
+        input{
+            padding-left: 1vw;
+            font-size: medium;
+            height: 30px; width: 100%;
+        }
+        button{
+            font-size: larger;
+            padding: 0.5vh 2vw;
+        }
+        .main-code{
+            height: 80vh; width: 40vw;
+            background-color: snow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .main-code pre{
+            font-size: larger;
+            margin-right: 35%;
+            margin-top: 10vh;
+        }
+        ol li{
+            font-size: xx-large;
+        }
+        ul li{
+            font-size: large;
+        }
+        li{
+            color: #fff;
+            margin-top: 20px;
+        }   
+        h1{
+            color: #fff;
+        }
+        @media screen and (max-width: 500px){
+            .main-cnt{
+                display: flex;
+                flex-direction: column;
+            }
+            .main-code{
+                width: 100vw; height: 42vh;
+            }
+            .main-code pre{
+                font-size: 7px;
+            }
+            h2{
+                font-size: small;
+            }
+            button{
+                font-size: small;
+            }
+            td,h2{
+                font-size: x-small;
+            }
+            input{
+            padding-left: 1vw;
+            font-size: smaller;
+            height: 20px; width: 100%;
+            }
+            h1{
+                margin-top: 5vh;
+                font-size: larger;
+            }
+            ol li{
+            font-size: medium;
+            }
+            ul li{
+                font-size: x-small;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo"><a href="index.html">Siddhesh | Code</a></div>
+    </nav>
+    <main>
+        <div class="main-cnt">
+            <div class="main-code">
+                <pre>
+                    HTML <br>
+                    &lt;h1&gt;Country & Capital&lt;/h1&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;India&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Delhi&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/ol&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;UK&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;London&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/ol&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Italy&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Rome&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/ol&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Russia&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Moscow&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/ol&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;US&lt;/li&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Washington&lt;/li&gt;
+                            &lt;/ul&gt;
+                    &lt;/ol&gt;
+                </pre>
+            </div>
+                <ol type="A">
+                    <h1>Country & Capital</h1>
+                    <ol>
+                        <li>India</li>
+                        <ul>
+                            <li>Delhi</li>
+                        </ul>
+                    </ol>
+                    <ol>
+                        <li>UK</li>
+                        <ul>
+                            <li>London</li>
+                        </ul>
+                    </ol>
+                    <ol>
+                        <li>Italy</li>
+                        <ul>
+                            <li>Rome</li>
+                        </ul>
+                    </ol>
+                    <ol>
+                        <li>Russia</li>
+                        <ul>
+                            <li>Moscow</li>
+                        </ul>
+                    </ol>
+                    <ol>
+                        <li>US</li>
+                        <ul>
+                            <li>Washington</li>
+                        </ul>
+                    </ol>
+                </ol>
+        </div>
+    </main>
+</body>
+</html>
